@@ -1,0 +1,51 @@
+productCategories:
+  default_settings:
+    urlBase: https://arkhavencomics.com/product-category
+    maxListSize: 360
+    url: ${urlBase}/${name}/?count=${maxListSize}
+  items:
+    - name: books
+    - name: leather
+
+products:
+  path: products.yml
+
+logging:
+  level: info # debug: error,warn,info,debug; info: error,warn,info; warn: warn,error; error: error
+  debug:
+    path: debug.log
+  error:
+    path: error.log
+  warn:
+    path: warn.log
+  info:
+    path: info.log
+
+alerts:
+  slack:
+    default_settings:
+      url: https://hooks.slack.com/services/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
+      channel: '#alerting'
+      username: bookbot
+      icon_emoji: ':books:'
+    config:
+      removed:            # product removed
+        enabled: true
+      added:              # product added
+        enabled: true
+      price:              # price changed
+        enabled: true
+      instock:            # from outofstock to instock
+        enabled: true
+      outofstock:         # from instock to outofstock
+        enabled: true
+      category:           # categories changed
+        enabled: true
+      tag:                # tags changed
+        enabled: true
+      description:        # description changed
+        enabled: true
+      # image:              # image changed
+      #   enabled: false    # not implemented
+      imageUrl:           # product's image url changed
+        enabled: true
