@@ -19,7 +19,7 @@ set -e -o pipefail
 
 
 # load script config data
-SCRIPT_CONFIG_FILEPATH="${SOURCE_DIR}/config.yml"
+SCRIPT_CONFIG_FILEPATH="${SOURCE_DIR}/../config/config.yml"
 load-script-config "${SCRIPT_CONFIG_FILEPATH}"                          "SCRIPT_CONFIG_CONTENT"
 load-logging-level "$SCRIPT_CONFIG_CONTENT"                             "SCRIPT_LOGGING_LEVEL"
 load-logging-filepath "$SCRIPT_CONFIG_CONTENT" "$SCRIPT_LOGGING_LEVEL"  "SCRIPT_LOGGING_FILEPATH"
@@ -34,7 +34,7 @@ load-product-details "$SCRIPT_PRODUCTS_FILEPATH" "SCRIPT_LOADED_PRODUCT_DETAILS"
 
 
 
-SCRIPT_ALERTS_SUPPRESSED_OVERRIDE='true'   # whether to override alert suppression. alerts can be suppressed if the script is run for the first time.
+SCRIPT_ALERTS_SUPPRESSED_OVERRIDE='true'   # whether to override alert suppression. alerts can be suppressed if the script is run for the first time. true means ignore suppression, so send the alerts anyways.
 SCRIPT_LATEST_PRODUCT_DETAILS_TMP_FILEPATH="/tmp/${SOURCE_NAME}-$(generate-uuid)"  # temporary details storage path
 SCRIPT_LATEST_PRODUCT_CHANGES_TMP_FILEPATH="/tmp/${SOURCE_NAME}-$(generate-uuid)"
 SCRIPT_FAILED_SLACK_ALERTS_TMP_FILEPATH="/tmp/${SOURCE_NAME}-failed-slack-alerts-$(generate-uuid)"

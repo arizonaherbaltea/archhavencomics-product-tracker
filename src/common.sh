@@ -150,6 +150,9 @@ function load-product-details {
   local failed=0
   log-info "loading products data from file '$filepath'"
   local alerts_suppressed_filepath="/tmp/${SOURCE_NAME}-$(generate-uuid)"
+  if [[ ! -f "$filepath" ]]; then
+    touch "$filepath"
+  fi 
   local product_details="$( yq -rc '.' -- "$filepath" \
     || ( log-warn "Unable load products from file '$filepath'. Alerts suppressed until baseline estabilished - normally next invocation/script execution." \
     && echo 'true' > "$alerts_suppressed_filepath" ) )"
@@ -159,9 +162,6 @@ function load-product-details {
   else
     set-suppress-alerts "false"
   fi
-  if [[ ! -f "$filepath" ]]; then
-    touch "$filepath"
-  fi 
   if [[ -z $product_details ]]; then
     log-warn "Products file appears empty '$filepath'"
     set-suppress-alerts "true"
@@ -534,12 +534,40 @@ function compare-single-product-field {
   done
 }
 
+function resend-alert-dlq {
+  local filepath="$( yq -rc '.["dead-letter-queue"].path' <<< "$SCRIPT_CONFIG_CONTENT" )"
+  local expanded_config="$( echo "$SCRIPT_CONFIG_CONTENT" | yq -rc '( .alerts | to_entries | ( [.[] | .value.default_settings as $default | {"key": .key, "value": {"config": ( .value.config | to_entries | [ .[] | {"key": .key, "value": ($default + .value | select(. != null)) } ] | from_entries ) } } ] ) | from_entries ) as $expanded | {"alerts":$expanded}' )"
+  local trigger=''
+  local provider=''
+  function load-trigger-config {
+    trigger_config="$(  jq -rc ".alerts | .[\"${provider}\"] | .config | .[\"${trigger}\"]" -- <<< "$expanded_config" )"
+  }
+  if [[ -n "$filepath" ]]; then
+    local filepath="${SOURCE_DIR}/${filepath}"
+    local content="$( cat "$filepath" 2>/dev/null )"
+    if [[ -n "$content" ]]; then
+      echo "$content" \
+      | while read -r event; do
+        provider="$( jq -rc '.["alert-provider"]' <<< "$event" )"
+        trigger="$( jq -rc '.["alert-trigger"]' <<< "$event" )"
+        load-trigger-config
+        slack-product-alert "${trigger_config}" "${event}" "${trigger}" || true
+      done
+    else
+      log-error "resend-alert-dlq: no alerts in dlq '$filepath'"
+    fi
+  else
+    log-error "resend-alert-dlq: unable to load alerts in dlq, filepath is empty."
+  fi
+}
+
 # alerts when configured changes are triggered (fields changed, send message)
 function alert-product-changes {
   local i=0
   if (( $# == 0 )) ; then
     local stdin="$( cat < /dev/stdin )"
     local count="$( wc -l <<< "$stdin" )"
+    resend-alert-dlq
     log-info "sending alerts for product changes based on configured triggers"
     while read -r json; do
       [[ -n "$json" ]] && alert-single-product-changed "$json" || log-warn "alert-product-changes: missing input json, unable to process alerts"
@@ -547,6 +575,7 @@ function alert-product-changes {
     done   <<< "$stdin"
   else
     local count="$( wc -l <<< "$@" )"
+    resend-alert-dlq
     while read -r json; do
       [[ -n "$json" ]] && alert-single-product-changed "$json" || log-warn "alert-product-changes: missing input json, unable to process alerts"
       i=$((i+1))
@@ -660,6 +689,7 @@ function slack-product-alert {
   local config="${1:?}"
   local event="${2:?}"
   local trigger="${3:?}"
+  local alert_provider='slack'
 
   local reqURL="$( jq -rc '.url' <<< "$config" )"
   local channel="$( jq -rc '.channel' <<< "$config" )"
@@ -1095,8 +1125,23 @@ EOF
     fi
   else
     log-warn "server returned http_code: $RES_CODE http_body: '$( format-error "$RES_BODY" )'"
+    export-alert-dlq "${event}" "${trigger}" "${alert_provider}"
     return 1
   fi
+}
+
+# exports alerts to dlq file, where they can be re-processed later.
+function export-alert-dlq {
+  local event="${1:?}"
+  local trigger="${2:?}"
+  local provider="${3:?}"
+  local filepath="$( yq -rc '.["dead-letter-queue"].path' <<< "$SCRIPT_CONFIG_CONTENT" )"
+    if [[ -n "$filepath" ]]; then
+      filepath="${SOURCE_DIR}/${filepath}"
+      jq -rc ". | .[\"alert-provider\"] = \"${provider}\" | .[\"alert-trigger\"] = \"${trigger}\"" <<< "${event}" >> "${filepath}"
+    else
+      log-error "export-alert-dlq: unable to export alert to dlq, filepath is missing."
+    fi
 }
 
 # prepares product details from ndjson to single json obj

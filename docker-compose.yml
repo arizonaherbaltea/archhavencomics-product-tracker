@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  archhavencomics-product-tracker:
+    image: archhavencomics-product-tracker
+    # environment:
+    #   INPUT_PATH: '*/default/helm'
+    volumes:
+      - ${PWD}/config:/usr/src/app/config
+      - ${PWD}/data:/usr/src/app/data

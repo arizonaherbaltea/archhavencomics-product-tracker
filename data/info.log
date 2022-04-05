@@ -1,0 +1,438 @@
+04/05/22 04:52:09 | info: loading config from /usr/src/app/src/../config/config.yml
+04/05/22 04:52:09 | info: logging level: info
+04/05/22 04:52:09 | info: getting products filepath from config
+04/05/22 04:52:09 | info: loading products data from file '/usr/src/app/src/../data/products.yml'
+04/05/22 04:52:09 | warn: Products file appears empty '/usr/src/app/src/../data/products.yml'
+04/05/22 04:52:09 | info: parsing products categories into list of urls
+04/05/22 04:52:09 | info: retrieving product list[0/2]: curl 'GET' on 'https://arkhavencomics.com/product-category/books/?count=360'
+04/05/22 04:52:10 | info: retrieving product list[1/2]: curl 'GET' on 'https://arkhavencomics.com/product-category/leather/?count=360'
+04/05/22 04:52:12 | info: retrieving latest product details from store
+04/05/22 04:52:12 | info: fetching product details[0/141]: curl 'GET' on 'https://arkhavencomics.com/product/4d-warfare/'
+04/05/22 04:52:13 | info: fetching product details[1/141]: curl 'GET' on 'https://arkhavencomics.com/product/4gw-handbook-audiobook/'
+04/05/22 04:52:15 | info: fetching product details[2/141]: curl 'GET' on 'https://arkhavencomics.com/product/4th-generation-warfare-handbook/'
+04/05/22 04:52:16 | info: fetching product details[3/141]: curl 'GET' on 'https://arkhavencomics.com/product/a-history-of-strategy/'
+04/05/22 04:52:17 | info: fetching product details[4/141]: curl 'GET' on 'https://arkhavencomics.com/product/a-magic-broken-audiobook/'
+04/05/22 04:52:18 | info: fetching product details[5/141]: curl 'GET' on 'https://arkhavencomics.com/product/a-magic-broken/'
+04/05/22 04:52:19 | info: fetching product details[6/141]: curl 'GET' on 'https://arkhavencomics.com/product/a-sea-of-skulls/'
+04/05/22 04:52:20 | info: fetching product details[7/141]: curl 'GET' on 'https://arkhavencomics.com/product/a-throne-of-bones/'
+04/05/22 04:52:22 | info: fetching product details[8/141]: curl 'GET' on 'https://arkhavencomics.com/product/aliengame/'
+04/05/22 04:52:23 | info: fetching product details[9/141]: curl 'GET' on 'https://arkhavencomics.com/product/altar-hate/'
+04/05/22 04:52:24 | info: fetching product details[10/141]: curl 'GET' on 'https://arkhavencomics.com/product/an-equation-of-almost-infinite-complexity/'
+04/05/22 04:52:25 | info: fetching product details[11/141]: curl 'GET' on 'https://arkhavencomics.com/product/appendixn/'
+04/05/22 04:52:26 | info: fetching product details[12/141]: curl 'GET' on 'https://arkhavencomics.com/product/aramini-between_light_shadow/'
+04/05/22 04:52:28 | info: fetching product details[13/141]: curl 'GET' on 'https://arkhavencomics.com/product/aramini-beyond-time-and-memory/'
+04/05/22 04:52:29 | info: fetching product details[14/141]: curl 'GET' on 'https://arkhavencomics.com/product/aristotle-rhetoric-library/'
+04/05/22 04:52:30 | info: fetching product details[15/141]: curl 'GET' on 'https://arkhavencomics.com/product/atob-audiobook/'
+04/05/22 04:52:31 | info: fetching product details[16/141]: curl 'GET' on 'https://arkhavencomics.com/product/atob1-libraria-edition/'
+04/05/22 04:52:32 | info: fetching product details[17/141]: curl 'GET' on 'https://arkhavencomics.com/product/atob1-library-edition/'
+04/05/22 04:52:34 | info: fetching product details[18/141]: curl 'GET' on 'https://arkhavencomics.com/product/atob2-libraria-edition/'
+04/05/22 04:52:35 | info: fetching product details[19/141]: curl 'GET' on 'https://arkhavencomics.com/product/atob2-library-edition/'
+04/05/22 04:52:36 | info: fetching product details[20/141]: curl 'GET' on 'https://arkhavencomics.com/product/awake-in-the-night-land/'
+04/05/22 04:52:37 | info: fetching product details[21/141]: curl 'GET' on 'https://arkhavencomics.com/product/book4-libraria/'
+04/05/22 04:52:38 | info: fetching product details[22/141]: curl 'GET' on 'https://arkhavencomics.com/product/book4-library/'
+04/05/22 04:52:40 | info: fetching product details[23/141]: curl 'GET' on 'https://arkhavencomics.com/product/brings-the-lightning-audiobook/'
+04/05/22 04:52:41 | info: fetching product details[24/141]: curl 'GET' on 'https://arkhavencomics.com/product/castalia-library-annual/'
+04/05/22 04:52:42 | info: fetching product details[25/141]: curl 'GET' on 'https://arkhavencomics.com/product/castalia-library-book03/'
+04/05/22 04:52:43 | info: fetching product details[26/141]: curl 'GET' on 'https://arkhavencomics.com/product/castalia-library-catchup/'
+04/05/22 04:52:44 | info: fetching product details[27/141]: curl 'GET' on 'https://arkhavencomics.com/product/castalia-library-subscription/'
+04/05/22 04:52:46 | info: fetching product details[28/141]: curl 'GET' on 'https://arkhavencomics.com/product/city-beyond-time-audiobook/'
+04/05/22 04:52:47 | info: fetching product details[29/141]: curl 'GET' on 'https://arkhavencomics.com/product/city-beyond-time/'
+04/05/22 04:52:48 | info: fetching product details[30/141]: curl 'GET' on 'https://arkhavencomics.com/product/city-of-corpses/'
+04/05/22 04:52:49 | info: fetching product details[31/141]: curl 'GET' on 'https://arkhavencomics.com/product/clio-and-me/'
+04/05/22 04:52:51 | info: fetching product details[32/141]: curl 'GET' on 'https://arkhavencomics.com/product/corporate-cancer-audio/'
+04/05/22 04:52:52 | info: fetching product details[33/141]: curl 'GET' on 'https://arkhavencomics.com/product/corporate-cancer/'
+04/05/22 04:52:53 | info: fetching product details[34/141]: curl 'GET' on 'https://arkhavencomics.com/product/corrosion-audiobook/'
+04/05/22 04:52:54 | info: fetching product details[35/141]: curl 'GET' on 'https://arkhavencomics.com/product/corrosion/'
+04/05/22 04:52:55 | info: fetching product details[36/141]: curl 'GET' on 'https://arkhavencomics.com/product/ctrl-alt-revolt/'
+04/05/22 04:52:57 | info: fetching product details[37/141]: curl 'GET' on 'https://arkhavencomics.com/product/cuckservative-audiobook/'
+04/05/22 04:52:58 | info: fetching product details[38/141]: curl 'GET' on 'https://arkhavencomics.com/product/cuckservative/'
+04/05/22 04:52:59 | info: fetching product details[39/141]: curl 'GET' on 'https://arkhavencomics.com/product/daughter-of-danger/'
+04/05/22 04:53:00 | info: fetching product details[40/141]: curl 'GET' on 'https://arkhavencomics.com/product/discourses-libraria-edition/'
+04/05/22 04:53:01 | info: fetching product details[41/141]: curl 'GET' on 'https://arkhavencomics.com/product/discourses-library-edition/'
+04/05/22 04:53:03 | info: fetching product details[42/141]: curl 'GET' on 'https://arkhavencomics.com/product/do-we-need-god/'
+04/05/22 04:53:04 | info: fetching product details[43/141]: curl 'GET' on 'https://arkhavencomics.com/product/dwng-audiobook/'
+04/05/22 04:53:05 | info: fetching product details[44/141]: curl 'GET' on 'https://arkhavencomics.com/product/equality-the-impossible-quest/'
+04/05/22 04:53:06 | info: fetching product details[45/141]: curl 'GET' on 'https://arkhavencomics.com/product/equation/'
+04/05/22 04:53:08 | info: fetching product details[46/141]: curl 'GET' on 'https://arkhavencomics.com/product/ethics-libraria-edition/'
+04/05/22 04:53:09 | info: fetching product details[47/141]: curl 'GET' on 'https://arkhavencomics.com/product/ethics-library-edition/'
+04/05/22 04:53:10 | info: fetching product details[48/141]: curl 'GET' on 'https://arkhavencomics.com/product/existence-audiobook/'
+04/05/22 04:53:11 | info: fetching product details[49/141]: curl 'GET' on 'https://arkhavencomics.com/product/existence-of-gods/'
+04/05/22 04:53:12 | info: fetching product details[50/141]: curl 'GET' on 'https://arkhavencomics.com/product/feast-of-the-elfs/'
+04/05/22 04:53:14 | info: fetching product details[51/141]: curl 'GET' on 'https://arkhavencomics.com/product/feed-the-bear/'
+04/05/22 04:53:15 | info: fetching product details[52/141]: curl 'GET' on 'https://arkhavencomics.com/product/four-generations-of-modern-war-audiobook/'
+04/05/22 04:53:16 | info: fetching product details[53/141]: curl 'GET' on 'https://arkhavencomics.com/product/grow-or-die-audiobook/'
+04/05/22 04:53:17 | info: fetching product details[54/141]: curl 'GET' on 'https://arkhavencomics.com/product/heidi-german-edition/'
+04/05/22 04:53:19 | info: fetching product details[55/141]: curl 'GET' on 'https://arkhavencomics.com/product/heidi-libraria-edition/'
+04/05/22 04:53:20 | info: fetching product details[56/141]: curl 'GET' on 'https://arkhavencomics.com/product/heidi-library-edition/'
+04/05/22 04:53:21 | info: fetching product details[57/141]: curl 'GET' on 'https://arkhavencomics.com/product/how-to-be-poor/'
+04/05/22 04:53:22 | info: fetching product details[58/141]: curl 'GET' on 'https://arkhavencomics.com/product/how-to-be-straight/'
+04/05/22 04:53:23 | info: fetching product details[59/141]: curl 'GET' on 'https://arkhavencomics.com/product/jordanetics-audiobook/'
+04/05/22 04:53:25 | info: fetching product details[60/141]: curl 'GET' on 'https://arkhavencomics.com/product/jungle-books-libraria-edition/'
+04/05/22 04:53:26 | info: fetching product details[61/141]: curl 'GET' on 'https://arkhavencomics.com/product/junior-classics-leather-1-3/'
+04/05/22 04:53:27 | info: fetching product details[62/141]: curl 'GET' on 'https://arkhavencomics.com/product/junior-classics-leather/'
+04/05/22 04:53:28 | info: fetching product details[63/141]: curl 'GET' on 'https://arkhavencomics.com/product/lawdog-africa-audiobook/'
+04/05/22 04:53:29 | info: fetching product details[64/141]: curl 'GET' on 'https://arkhavencomics.com/product/lawdog-audiobook/'
+04/05/22 04:53:31 | info: fetching product details[65/141]: curl 'GET' on 'https://arkhavencomics.com/product/libraria-castalia-annual/'
+04/05/22 04:53:32 | info: fetching product details[66/141]: curl 'GET' on 'https://arkhavencomics.com/product/libraria-castalia-catchup/'
+04/05/22 04:53:33 | info: fetching product details[67/141]: curl 'GET' on 'https://arkhavencomics.com/product/libraria-castalia/'
+04/05/22 04:53:34 | info: fetching product details[68/141]: curl 'GET' on 'https://arkhavencomics.com/product/libraria_book02/'
+04/05/22 04:53:35 | info: fetching product details[69/141]: curl 'GET' on 'https://arkhavencomics.com/product/libraria_book03/'
+04/05/22 04:53:37 | info: fetching product details[70/141]: curl 'GET' on 'https://arkhavencomics.com/product/library_book2/'
+04/05/22 04:53:38 | info: fetching product details[71/141]: curl 'GET' on 'https://arkhavencomics.com/product/middle-rages/'
+04/05/22 04:53:39 | info: fetching product details[72/141]: curl 'GET' on 'https://arkhavencomics.com/product/mutiny-in-space-audiobook/'
+04/05/22 04:53:40 | info: fetching product details[73/141]: curl 'GET' on 'https://arkhavencomics.com/product/mutiny_in_space/'
+04/05/22 04:53:41 | info: fetching product details[74/141]: curl 'GET' on 'https://arkhavencomics.com/product/on-the-question-of-free-trade/'
+04/05/22 04:53:43 | info: fetching product details[75/141]: curl 'GET' on 'https://arkhavencomics.com/product/on-war-audiobook/'
+04/05/22 04:53:44 | info: fetching product details[76/141]: curl 'GET' on 'https://arkhavencomics.com/product/on-war/'
+04/05/22 04:53:45 | info: fetching product details[77/141]: curl 'GET' on 'https://arkhavencomics.com/product/plutarchs-lives-vol-ii-libraria-edition/'
+04/05/22 04:53:46 | info: fetching product details[78/141]: curl 'GET' on 'https://arkhavencomics.com/product/plutarchs-lives-vol-ii-library-edition/'
+04/05/22 04:53:48 | info: fetching product details[79/141]: curl 'GET' on 'https://arkhavencomics.com/product/plutarchv1-library/'
+04/05/22 04:53:49 | info: fetching product details[80/141]: curl 'GET' on 'https://arkhavencomics.com/product/plutarchv1_libraria/'
+04/05/22 04:53:50 | info: fetching product details[81/141]: curl 'GET' on 'https://arkhavencomics.com/product/pop-kult-warlord/'
+04/05/22 04:53:51 | info: fetching product details[82/141]: curl 'GET' on 'https://arkhavencomics.com/product/push-the-zone-audiobook/'
+04/05/22 04:53:52 | info: fetching product details[83/141]: curl 'GET' on 'https://arkhavencomics.com/product/qmamd-audiobook/'
+04/05/22 04:53:54 | info: fetching product details[84/141]: curl 'GET' on 'https://arkhavencomics.com/product/quantum-mortis-a-man-disrupted/'
+04/05/22 04:53:55 | info: fetching product details[85/141]: curl 'GET' on 'https://arkhavencomics.com/product/quantum-mortis-a-mind-programmed/'
+04/05/22 04:53:56 | info: fetching product details[86/141]: curl 'GET' on 'https://arkhavencomics.com/product/quantum-mortis-gravitykills/'
+04/05/22 04:53:57 | info: fetching product details[87/141]: curl 'GET' on 'https://arkhavencomics.com/product/red-horse-v1/'
+04/05/22 04:53:58 | info: fetching product details[88/141]: curl 'GET' on 'https://arkhavencomics.com/product/rhetoric-libraria-edition/'
+04/05/22 04:54:00 | info: fetching product details[89/141]: curl 'GET' on 'https://arkhavencomics.com/product/rocky-mountain-retribution-audiobook/'
+04/05/22 04:54:01 | info: fetching product details[90/141]: curl 'GET' on 'https://arkhavencomics.com/product/ship-of-fools/'
+04/05/22 04:54:02 | info: fetching product details[91/141]: curl 'GET' on 'https://arkhavencomics.com/product/sjwal-audiobook/'
+04/05/22 04:54:03 | info: fetching product details[92/141]: curl 'GET' on 'https://arkhavencomics.com/product/sjws-always-double-down-audiobook/'
+04/05/22 04:54:06 | info: fetching product details[93/141]: curl 'GET' on 'https://arkhavencomics.com/product/sjws-always-double-down/'
+04/05/22 04:54:07 | info: fetching product details[94/141]: curl 'GET' on 'https://arkhavencomics.com/product/sjws-always-lie/'
+04/05/22 04:54:08 | info: fetching product details[95/141]: curl 'GET' on 'https://arkhavencomics.com/product/soda-pop-soldier/'
+04/05/22 04:54:10 | info: fetching product details[96/141]: curl 'GET' on 'https://arkhavencomics.com/product/summa-elvetica-a-casuistry-of-the-elvish-controversy/'
+04/05/22 04:54:11 | info: fetching product details[97/141]: curl 'GET' on 'https://arkhavencomics.com/product/summa-elvetica-libraria-edition/'
+04/05/22 04:54:13 | info: fetching product details[98/141]: curl 'GET' on 'https://arkhavencomics.com/product/summa-library/'
+04/05/22 04:54:14 | info: fetching product details[99/141]: curl 'GET' on 'https://arkhavencomics.com/product/superluminary/'
+04/05/22 04:54:15 | info: fetching product details[100/141]: curl 'GET' on 'https://arkhavencomics.com/product/swan-knights-son/'
+04/05/22 04:54:16 | info: fetching product details[101/141]: curl 'GET' on 'https://arkhavencomics.com/product/swan-knights-sword/'
+04/05/22 04:54:18 | info: fetching product details[102/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-dark-avengers-sidekick/'
+04/05/22 04:54:19 | info: fetching product details[103/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-green-knights-squire/'
+04/05/22 04:54:20 | info: fetching product details[104/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-jungle-books-library-edition/'
+04/05/22 04:54:21 | info: fetching product details[105/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-junior-classics-vol-i/'
+04/05/22 04:54:23 | info: fetching product details[106/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-junior-classics-vol-ii/'
+04/05/22 04:54:24 | info: fetching product details[107/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-junior-classics-vol-iii/'
+04/05/22 04:54:25 | info: fetching product details[108/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-last-closet-audiobook/'
+04/05/22 04:54:26 | info: fetching product details[109/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-last-witchking-audiobook/'
+04/05/22 04:54:28 | info: fetching product details[110/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-long-moonlight-audiobook/'
+04/05/22 04:54:29 | info: fetching product details[111/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-long-moonlight-ebook/'
+04/05/22 04:54:30 | info: fetching product details[112/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-long-moonlight-hardcover-2/'
+04/05/22 04:54:31 | info: fetching product details[113/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-long-moonlight-hardcover/'
+04/05/22 04:54:32 | info: fetching product details[114/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-long-moonlight/'
+04/05/22 04:54:34 | info: fetching product details[115/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-missionaries-audiobook/'
+04/05/22 04:54:35 | info: fetching product details[116/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-missionaries-library-edition/'
+04/05/22 04:54:36 | info: fetching product details[117/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-missionaries/'
+04/05/22 04:54:37 | info: fetching product details[118/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-promethean-audiobook/'
+04/05/22 04:54:39 | info: fetching product details[119/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-promethean/'
+04/05/22 04:54:40 | info: fetching product details[120/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-trial-of-roger-stone-audiobook/'
+04/05/22 04:54:41 | info: fetching product details[121/141]: curl 'GET' on 'https://arkhavencomics.com/product/the-trial-of-roger-stone/'
+04/05/22 04:54:42 | info: fetching product details[122/141]: curl 'GET' on 'https://arkhavencomics.com/product/tia-audiobook/'
+04/05/22 04:54:43 | info: fetching product details[123/141]: curl 'GET' on 'https://arkhavencomics.com/product/tithe-to-tartarus/'
+04/05/22 04:54:45 | info: fetching product details[124/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw01/'
+04/05/22 04:54:46 | info: fetching product details[125/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw02/'
+04/05/22 04:54:47 | info: fetching product details[126/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw03/'
+04/05/22 04:54:48 | info: fetching product details[127/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw04/'
+04/05/22 04:54:50 | info: fetching product details[128/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw05/'
+04/05/22 04:54:51 | info: fetching product details[129/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw06/'
+04/05/22 04:54:52 | info: fetching product details[130/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw07/'
+04/05/22 04:54:53 | info: fetching product details[131/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw08/'
+04/05/22 04:54:54 | info: fetching product details[132/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw09/'
+04/05/22 04:54:56 | info: fetching product details[133/141]: curl 'GET' on 'https://arkhavencomics.com/product/twbw10/'
+04/05/22 04:54:57 | info: fetching product details[134/141]: curl 'GET' on 'https://arkhavencomics.com/product/wardogs-inc-1-battlesuit-bastards/'
+04/05/22 04:54:58 | info: fetching product details[135/141]: curl 'GET' on 'https://arkhavencomics.com/product/wardogs-inc-2-hunter-killer/'
+04/05/22 04:54:59 | info: fetching product details[136/141]: curl 'GET' on 'https://arkhavencomics.com/product/wardogs-inc-3-metal-monsters/'
+04/05/22 04:55:00 | info: fetching product details[137/141]: curl 'GET' on 'https://arkhavencomics.com/product/wardogs01-audiobook/'
+04/05/22 04:55:02 | info: fetching product details[138/141]: curl 'GET' on 'https://arkhavencomics.com/product/wardogs2-audiobook/'
+04/05/22 04:55:03 | info: fetching product details[139/141]: curl 'GET' on 'https://arkhavencomics.com/product/wardogs3-audiobook/'
+04/05/22 04:55:04 | info: fetching product details[140/141]: curl 'GET' on 'https://arkhavencomics.com/product/youngmanswar/'
+04/05/22 04:55:05 | info: storing latest product details to temp file '/tmp/track-products-arkhavencomics-2cfe5d03-b71e-43e0-a813-b38309aab4a3'
+04/05/22 04:55:05 | info: comparing latest product's fields with previous records
+04/05/22 04:55:11 | warn: compare-product-fields: missing input json, unable to get deleted products.
+04/05/22 04:55:11 | error: resend-alert-dlq: no alerts in dlq '/usr/src/app/src/../data/alert-dlq.yml'
+04/05/22 04:55:11 | info: sending alerts for product changes based on configured triggers
+04/05/22 04:55:11 | info: slack alert: added 4D Warfare
+04/05/22 04:55:12 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:12 | info: slack alert: added 4th Generation Warfare Handbook (audiobook+)
+04/05/22 04:55:12 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:13 | info: slack alert: added 4th Generation Warfare Handbook
+04/05/22 04:55:13 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:13 | info: slack alert: added A History of Strategy: From Sun Tzu to William S. Lind
+04/05/22 04:55:14 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:14 | info: slack alert: added A Magic Broken (audiobook+)
+04/05/22 04:55:14 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:15 | info: slack alert: added A Magic Broken
+04/05/22 04:55:15 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:15 | info: slack alert: added A Sea of Skulls
+04/05/22 04:55:16 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:16 | info: slack alert: added A Throne of Bones
+04/05/22 04:55:16 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:17 | info: slack alert: added Alien Game: The Thousand Worlds #2
+04/05/22 04:55:17 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:17 | info: slack alert: added The Altar of Hate
+04/05/22 04:55:18 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:18 | info: slack alert: added An Equation of Almost Infinite Complexity
+04/05/22 04:55:18 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:19 | info: slack alert: added Appendix N
+04/05/22 04:55:19 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:19 | info: slack alert: added Between Light and Shadow
+04/05/22 04:55:20 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:20 | info: slack alert: added Beyond Time and Memory
+04/05/22 04:55:20 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:21 | info: slack alert: added Rhetoric Library edition
+04/05/22 04:55:21 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:21 | info: slack alert: added A Throne of Bones (audiobook+)
+04/05/22 04:55:22 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:22 | info: slack alert: added A Throne of Bones Vol. I Libraria edition
+04/05/22 04:55:22 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:23 | info: slack alert: added A Throne of Bones Vol. I Library edition
+04/05/22 04:55:23 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:23 | info: slack alert: added A Throne of Bones Vol. II Libraria edition
+04/05/22 04:55:24 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:24 | info: slack alert: added A Throne of Bones Vol. II Library edition
+04/05/22 04:55:24 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:25 | info: slack alert: added Awake in the Night Land
+04/05/22 04:55:25 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:25 | info: slack alert: added The Divine Comedy Libraria edition
+04/05/22 04:55:26 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:26 | info: slack alert: added The Divine Comedy Library edition
+04/05/22 04:55:26 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:27 | info: slack alert: added Brings the Lightning (audiobook)
+04/05/22 04:55:27 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:27 | info: slack alert: added Castalia Library annual subscription
+04/05/22 04:55:28 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:28 | info: slack alert: added Awake in the Night Land Library edition
+04/05/22 04:55:28 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:29 | info: slack alert: added Castalia Library catchup &#8211; subscription
+04/05/22 04:55:29 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:29 | info: slack alert: added Castalia Library subscription
+04/05/22 04:55:30 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:30 | info: slack alert: added City Beyond Time audiobook+
+04/05/22 04:55:30 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:31 | info: slack alert: added City Beyond Time
+04/05/22 04:55:31 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:31 | info: slack alert: added City of Corpses
+04/05/22 04:55:31 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:32 | info: slack alert: added Clio &#038; Me: An Intellectual Autobiography
+04/05/22 04:55:32 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:33 | info: slack alert: added Corporate Cancer (audiobook+)
+04/05/22 04:55:33 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:33 | info: slack alert: added Corporate Cancer
+04/05/22 04:55:33 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:34 | info: slack alert: added Corrosion (audiobook+)
+04/05/22 04:55:34 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:34 | info: slack alert: added Corrosion
+04/05/22 04:55:35 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:35 | info: slack alert: added Ctrl-Alt-Revolt!
+04/05/22 04:55:35 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:36 | info: slack alert: added Cuckservative (audiobook+)
+04/05/22 04:55:36 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:36 | info: slack alert: added Cuckservative
+04/05/22 04:55:37 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:37 | info: slack alert: added Daughter of Danger
+04/05/22 04:55:37 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:38 | info: slack alert: added Discourses on Livy Libraria edition
+04/05/22 04:55:38 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:38 | info: slack alert: added Discourses on Livy Library edition
+04/05/22 04:55:39 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:39 | info: slack alert: added Do We Need God to be Good?
+04/05/22 04:55:39 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:40 | info: slack alert: added Do We Need God to be Good (audiobook+)
+04/05/22 04:55:40 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:40 | info: slack alert: added Equality: The Impossible Quest
+04/05/22 04:55:40 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:41 | info: slack alert: added An Equation of Almost Infinite Complexity (audiobook+)
+04/05/22 04:55:41 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:41 | info: slack alert: added Ethics Libraria edition
+04/05/22 04:55:42 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:42 | info: slack alert: added Ethics Library edition
+04/05/22 04:55:42 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:43 | info: slack alert: added On the Existence of Gods (audiobook+)
+04/05/22 04:55:43 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:43 | info: slack alert: added On the Existence of Gods
+04/05/22 04:55:44 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:44 | info: slack alert: added Feast of the Elfs
+04/05/22 04:55:44 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:45 | info: slack alert: added Feed the Bear (audiobook)
+04/05/22 04:55:45 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:45 | info: slack alert: added Four Generations of Modern War (audiobook+)
+04/05/22 04:55:46 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:46 | info: slack alert: added Grow or Die (audiobook+)
+04/05/22 04:55:46 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:47 | info: slack alert: added Heidi Alpines edition (Deutsch)
+04/05/22 04:55:47 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:47 | info: slack alert: added Heidi Libraria edition
+04/05/22 04:55:48 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:48 | info: slack alert: added Heidi Library edition
+04/05/22 04:55:48 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:49 | info: slack alert: added How To Be Poor
+04/05/22 04:55:49 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:49 | info: slack alert: added How To Be Straight
+04/05/22 04:55:50 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:50 | info: slack alert: added Jordanetics (audiobook+)
+04/05/22 04:55:50 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:51 | info: slack alert: added The Jungle Books Libraria edition
+04/05/22 04:55:51 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:51 | info: slack alert: added Junior Classics Leather Vols. I to III
+04/05/22 04:55:52 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:52 | info: slack alert: added Junior Classics Leather Set
+04/05/22 04:55:52 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:53 | info: slack alert: added The Lawdog Files: African Adventures (audiobook)
+04/05/22 04:55:53 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:53 | info: slack alert: added The Lawdog Files (audiobook)
+04/05/22 04:55:53 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:54 | info: slack alert: added Libraria Castalia annual subscription
+04/05/22 04:55:54 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:55 | info: slack alert: added Libraria Castalia catchup &#8211; subscription
+04/05/22 04:55:55 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:55 | info: slack alert: added Libraria Castalia subscription
+04/05/22 04:55:55 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:56 | info: slack alert: added The Meditations Libraria edition
+04/05/22 04:55:56 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:56 | info: slack alert: added Awake in the Night Land Libraria edition
+04/05/22 04:55:57 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:57 | info: slack alert: added The Meditations Library edition
+04/05/22 04:55:57 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:58 | info: slack alert: added Middle Rages
+04/05/22 04:55:58 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:58 | info: slack alert: added Mutiny in Space (audiobook+)
+04/05/22 04:55:59 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:55:59 | info: slack alert: added Mutiny in Space: The Thousand Worlds #1
+04/05/22 04:55:59 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:00 | info: slack alert: added On the Question of Free Trade
+04/05/22 04:56:00 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:00 | info: slack alert: added On War (audiobook+)
+04/05/22 04:56:01 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:01 | info: slack alert: added On War
+04/05/22 04:56:01 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:02 | info: slack alert: added Plutarch's Lives Vol. II Libraria edition
+04/05/22 04:56:02 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:02 | info: slack alert: added Plutarch's Lives Vol. II Library edition
+04/05/22 04:56:02 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:03 | info: slack alert: added Plutarch's Lives Vol. I Library edition
+04/05/22 04:56:03 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:03 | info: slack alert: added Plutarch's Lives Vol. I Libraria edition
+04/05/22 04:56:04 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:04 | info: slack alert: added Pop Kult Warlord
+04/05/22 04:56:04 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:05 | info: slack alert: added Push the Zone (audiobook+)
+04/05/22 04:56:05 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:05 | info: slack alert: added Quantum Mortis: A Man Disrupted (audiobook+)
+04/05/22 04:56:06 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:06 | info: slack alert: added Quantum Mortis: A Man Disrupted
+04/05/22 04:56:06 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:07 | info: slack alert: added Quantum Mortis: A Mind Programmed
+04/05/22 04:56:07 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:07 | info: slack alert: added Quantum Mortis: Gravity Kills
+04/05/22 04:56:08 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:08 | info: slack alert: added Riding the Red Horse
+04/05/22 04:56:08 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:09 | info: slack alert: added Rhetoric Libraria edition
+04/05/22 04:56:09 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:09 | info: slack alert: added Rocky Mountain Retribution (audiobook)
+04/05/22 04:56:10 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:10 | info: slack alert: added Ship of Fools
+04/05/22 04:56:10 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:11 | info: slack alert: added SJWs Always Lie (audiobook+)
+04/05/22 04:56:11 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:11 | info: slack alert: added SJWs Always Double Down (audiobook+)
+04/05/22 04:56:11 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:12 | info: slack alert: added SJWs Always Double Down
+04/05/22 04:56:12 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:12 | info: slack alert: added SJWs Always Lie
+04/05/22 04:56:13 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:13 | info: slack alert: added Soda Pop Soldier
+04/05/22 04:56:13 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:14 | info: slack alert: added Summa Elvetica: A Casuistry of the Elvish Controversy
+04/05/22 04:56:14 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:14 | info: slack alert: added Summa Elvetica Libraria edition
+04/05/22 04:56:15 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:15 | info: slack alert: added Summa Elvetica Library edition
+04/05/22 04:56:15 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:16 | info: slack alert: added Superluminary
+04/05/22 04:56:16 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:16 | info: slack alert: added Swan Knight's Son
+04/05/22 04:56:16 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:17 | info: slack alert: added Swan Knight's Sword
+04/05/22 04:56:17 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:17 | info: slack alert: added The Dark Avenger's Sidekick
+04/05/22 04:56:18 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:18 | info: slack alert: added The Green Knight's Squire
+04/05/22 04:56:18 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:19 | info: slack alert: added The Jungle Books Library edition
+04/05/22 04:56:19 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:19 | info: slack alert: added The Junior Classics Vol. I
+04/05/22 04:56:20 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:20 | info: slack alert: added The Junior Classics Vol. II
+04/05/22 04:56:20 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:21 | info: slack alert: added The Junior Classics Vol. III
+04/05/22 04:56:21 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:21 | info: slack alert: added The Last Closet (audiobook+)
+04/05/22 04:56:22 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:22 | info: slack alert: added The Last Witchking (audiobook+)
+04/05/22 04:56:22 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:22 | info: slack alert: added The Long Moonlight audiobook+
+04/05/22 04:56:23 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:23 | info: slack alert: added The Long Moonlight ebook
+04/05/22 04:56:23 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:24 | info: slack alert: added The Long Moonlight hardcover edition
+04/05/22 04:56:24 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:24 | info: slack alert: added The Long Moonlight signed edition
+04/05/22 04:56:25 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:25 | info: slack alert: added The Long Moonlight paperback edition
+04/05/22 04:56:25 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:26 | info: slack alert: added The Missionaries (audiobook+)
+04/05/22 04:56:26 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:26 | info: slack alert: added The Missionaries Library Edition
+04/05/22 04:56:27 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:27 | info: slack alert: added The Missionaries
+04/05/22 04:56:27 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:28 | info: slack alert: added The Promethean (audiobook+)
+04/05/22 04:56:28 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:28 | info: slack alert: added The Promethean
+04/05/22 04:56:28 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:29 | info: slack alert: added The Trial of Roger Stone (audiobook+)
+04/05/22 04:56:29 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:29 | info: slack alert: added The Trial of Roger Stone
+04/05/22 04:56:30 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:30 | info: slack alert: added The Irrational Atheist (audiobook)
+04/05/22 04:56:30 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:31 | info: slack alert: added Tithe to Tartarus
+04/05/22 04:56:31 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:31 | info: slack alert: added There Will Be War Vol. I
+04/05/22 04:56:31 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:32 | info: slack alert: added There Will Be War Vol. II
+04/05/22 04:56:32 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:32 | info: slack alert: added There Will Be War Vol. III
+04/05/22 04:56:33 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:33 | info: slack alert: added There Will Be War Vol. IV
+04/05/22 04:56:33 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:34 | info: slack alert: added There Will Be War Vol. V
+04/05/22 04:56:34 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:34 | info: slack alert: added There Will Be War Vol. VI
+04/05/22 04:56:35 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:35 | info: slack alert: added There Will Be War Vol. VII
+04/05/22 04:56:35 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:36 | info: slack alert: added There Will Be War Vol. VIII
+04/05/22 04:56:36 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:36 | info: slack alert: added There Will Be War Vol. IX
+04/05/22 04:56:37 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:37 | info: slack alert: added There Will Be War Vol. X
+04/05/22 04:56:37 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:37 | info: slack alert: added Wardogs Inc. #1: Battlesuit Bastards
+04/05/22 04:56:38 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:38 | info: slack alert: added Wardogs Inc. #2: Hunter Killer
+04/05/22 04:56:38 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:39 | info: slack alert: added Wardogs Inc. #3: Metal Monsters
+04/05/22 04:56:39 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:39 | info: slack alert: added Wardogs Inc. #1: Battlesuit Bastards (audiobook +)
+04/05/22 04:56:40 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:40 | info: slack alert: added Wardogs Inc. #2: Hunter Killer (audiobook+)
+04/05/22 04:56:40 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:41 | info: slack alert: added Wardogs Inc. #3: Metal Monsters (audiobook)
+04/05/22 04:56:41 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:41 | info: slack alert: added Young Man's War: The Thousand Worlds #3
+04/05/22 04:56:42 | warn: server returned http_code: 403 http_body: 'invalid_token '
+04/05/22 04:56:42 | info: overwriting previous products file '/usr/src/app/src/../data/products.yml'

@@ -8,19 +8,22 @@ productCategories:
     - name: leather
 
 products:
-  path: products.yml
+  path: ../data/products.yml
 
 logging:
   level: info # debug: error,warn,info,debug; info: error,warn,info; warn: warn,error; error: error
   debug:
-    path: debug.log
+    path: ../data/debug.log
   error:
-    path: error.log
+    path: ../data/error.log
   warn:
-    path: warn.log
+    path: ../data/warn.log
   info:
-    path: info.log
+    path: ../data/info.log
 
+dead-letter-queue:
+  path: ../data/alert-dlq.yml
+  
 alerts:
   slack:
     default_settings:
